@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+:root{
+
+    /* Color */
+    --color-green-primary: hsl(71, 86%, 70%);
+    --color-green-secondary: hsla(71, 87%, 71%, 0.8);
+    --color-background-white: hsl(0, 0%, 100%);
+    --color-black-primary: #474747;
+    --color-black-secondary: #5f5f5f;
+    --color-black-medium: #5e5e5e99;
+    --color-pink: hsl(284, 91%, 79%);
+    --color-purple: hsl(237, 98%, 81%);
+    --color-blue-primary: hsl(200, 84%, 58%);
+    --color-blue-secondary: hsl(194, 62%, 76%);
+    --color-red: hsl(0, 85%, 55%);
+    --color-violet: hsl(285, 86%, 44%);
+    --color-yellow: hsl(43, 95%, 55%);
+
+    /* font */
+    --font-jakarta: "Plus Jakarta Sans";
+
+    /* font weight */
+    --fw-700: 700;
+    --fw-700: 600;
+    --fw-700: 500;
+    --fw-700: 400;
+    --fw-700: 300;
+
+    /* font sizes */
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.3125rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 2.652rem;
+    --font-size-4xl: 4rem;
+}
+
+/* ----------------------------------*/
+/* Design System                     */
+/* ----------------------------------*/ 
+
+/* colors */
+
+.bg-dark { background-color: var(--color-black-primary);}
+.bg-light { background-color: var(--color-black-secondary);}
+.bg-white {background-color: var(--color-background-white);}
+
+.text-dark { color: var(--color-black-secondary);}
+/* .text-accent { color: hsl( var(--color-light) );} */
+.text-white { color: hsl( var(--color-background-white) );}
+
+/*typography*/
+.ff-serif { font-family: var(--font-jakarta); }
+
+/* letter spacing */
+.letter-spacing-1 { letter-spacing: 4.75px; } 
+.letter-spacing-2 { letter-spacing: 2.7px; } 
+.letter-spacing-3 { letter-spacing: 2.35px; }
+
+/* uppercase */
+.uppercase { text-transform: uppercase; }
+
+/* font size */
+.fs-200 { font-size: var(--font-size-xs); }
+.fs-300 { font-size: var(--font-size-sm); }
+.fs-400 { font-size: var(--font-size-md); }
+.fs-500 { font-size: var(--font-size-lg); }
+.fs-600 { font-size: var(--font-size-xl); }
+.fs-700 { font-size: var(--font-size-2xl); }
+.fs-800 { font-size: var(--font-size-3xl); }
+.fs-900 { font-size: var(--font-size-4xl); }
+
+/* line height */
+.fs-900,
+.fs-800,
+.fs-700,
+.fs-600 {
+    line-height: 1.1;
+}
+
+/* ------------------- */
+/* Utility classes     */
+/* ------------------- */ 
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.grid {
+    display: grid;
+    gap: var(--gap, 1rem);
+}
+
+.container {
+    padding-inline: 2em;
+    margin-inline: auto;
+    max-width: 60rem;
+}
