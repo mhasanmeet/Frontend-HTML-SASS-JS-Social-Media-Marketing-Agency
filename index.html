@@ -19,9 +19,99 @@
 </head>
 <body>
     
-    <header class="container header" id="header"></header>
+    <header class="header box-shadow-md" id="header">
+        <nav class="ff-jakarta navbar flex">
+            <div class="navbar__brand">
+                <a href="index.html">
+                    <figure>
+                        <img src="./Images/Mercado-logo.svg" alt="Mercado-Logo-image">
+                        <figcaption class="hidden">Mercado Logo</figcaption>
+                    </figure>
+                </a>
+            </div>
 
-    <main class="container header" id="header"></main>
+            <ul class="navbar__nav flex">
+                <div class="nav__item">
+                    <a href="#home" class="text-dark fw-500">Home</a>
+                </div>
+                <div class="nav__item">
+                    <a href="#service-main" class="text-dark fw-500">Services</a>
+                </div>
+                <div class="nav__item">
+                    <a href="#analytics" class="text-dark fw-500">Analytics</a>
+                </div>
+                <div class="nav__item">
+                    <a href="#client-review" class="text-dark fw-500">Review</a>
+                </div>
+                <div class="nav__item">
+                    <a href="#footer" class="text-dark fw-500">Footer</a>
+                </div>
+            </ul>
+
+            <section class="nav__btn-group">
+                <button class="btn-md nav__btn-signup">
+                    <a href="#" class="text-dark fw-600">Sign Up Free</a>
+                </button>
+    
+                <button class="btn-md nav__btn-login bg-white">
+                    <a href="#" class="text-dark fw-600">Log In</a>
+                </button>
+            </section>
+
+            <button class="nav__btn-toggle hidden">
+                <span class="one"></span>
+                <span class="two"></span>
+                <span class="three"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="container ff-jakarta main">
+
+        <section class="hero" id="hero">
+            <div class="hero__left">
+                <div class="left-shape">
+                    <img src="./Images/hero/hero-shape.svg" alt="Mercado-Logo-image">
+                </div>
+
+                <h1 class="hero__title fs-900 fw-600">Growth Product <br>
+                    Sell Consistently
+                </h1>
+
+                <p class="hero__description fs-500">
+                    The only platform you will ever need to help run your business:
+                    integrated apps, kept simple, and loved by millions of happy users.
+                </p>
+
+                <form class="hero__subscription" action="">
+                    <input type="email" class="hero__email-input" placeholder="name@mail.com" required>
+                    <button type="submit" class="btn-sm hero__submit-btn">Sign Up Free</button>
+                </form>
+            </div>
+
+            <div class="hero__right">
+                <div class="hero__right-shape">
+                    <img src="./Images/hero/hero-right-shape-1.png" alt="sale-shape" class="hero__right-shape-1">
+                </div>
+
+                <div class="hero__right-shape">
+                    <img src="./Images/hero/hero-right-shape-2.png" alt="customer-shape" class="hero__right-shape-2">
+                </div>
+
+                <div class="hero__revenue-report">
+                    <img src="./Images/hero/revenue-report.png" alt="" class="hero__right-img">
+                </div>
+            </div>
+        </section>
+
+        <section class="feature"></section>
+        <section class="service-main" id="service-main"></section>
+        <section class="service"></section>
+        <section class="analytics" id="analytics"></section>
+        <section class="client-review" id="client-review"></section>
+        <section class="engage-brand"></section>
+        <section class="direct-contact"></section>
+    </main>
 
     <footer class="container footer" id="footer"></footer>
 </body>

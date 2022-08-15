@@ -6,9 +6,10 @@
     --color-green-primary: hsl(71, 86%, 70%);
     --color-green-secondary: hsla(71, 87%, 71%, 0.8);
     --color-background-white: hsl(0, 0%, 100%);
-    --color-black-primary: #474747;
-    --color-black-secondary: #5f5f5f;
-    --color-black-medium: #5e5e5e99;
+    --color-black-primary: hsl(0, 0%, 28%);
+    --color-black-secondary: hsl(0, 0%, 37%);
+    --color-black-medium: hsla(0, 0%, 37%, 0.6);
+    --color-black-dim: hsl(0, 0%, 73%);
     --color-pink: hsl(284, 91%, 79%);
     --color-purple: hsl(237, 98%, 81%);
     --color-blue-primary: hsl(200, 84%, 58%);
@@ -17,15 +18,23 @@
     --color-violet: hsl(285, 86%, 44%);
     --color-yellow: hsl(43, 95%, 55%);
 
+    /* box Shadow */
+    --box-shadow-1: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    --box-shadow-2: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    --box-shadow-3: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+    /* Gradient-color */
+    --linear-gradient: conic-gradient(from -270deg at 50% -5%, yellow, yellowgreen);
+
     /* font */
     --font-jakarta: "Plus Jakarta Sans";
 
     /* font weight */
     --fw-700: 700;
-    --fw-700: 600;
-    --fw-700: 500;
-    --fw-700: 400;
-    --fw-700: 300;
+    --fw-600: 600;
+    --fw-500: 500;
+    --fw-400: 400;
+    --fw-300: 300;
 
     /* font sizes */
     --font-size-xs: 0.75rem;
@@ -43,7 +52,6 @@
 /* ----------------------------------*/ 
 
 /* colors */
-
 .bg-dark { background-color: var(--color-black-primary);}
 .bg-light { background-color: var(--color-black-secondary);}
 .bg-white {background-color: var(--color-background-white);}
@@ -53,12 +61,12 @@
 .text-white { color: hsl( var(--color-background-white) );}
 
 /*typography*/
-.ff-serif { font-family: var(--font-jakarta); }
+.ff-jakarta { font-family: var(--font-jakarta); }
 
 /* letter spacing */
-.letter-spacing-1 { letter-spacing: 4.75px; } 
+.letter-spacing-1 { letter-spacing: 2.35px; }
 .letter-spacing-2 { letter-spacing: 2.7px; } 
-.letter-spacing-3 { letter-spacing: 2.35px; }
+.letter-spacing-3 { letter-spacing: 4.75px; } 
 
 /* uppercase */
 .uppercase { text-transform: uppercase; }
@@ -73,30 +81,45 @@
 .fs-800 { font-size: var(--font-size-3xl); }
 .fs-900 { font-size: var(--font-size-4xl); }
 
+/* font weight */
+.fw-700 { font-weight: var(--fw-700); }
+.fw-600 { font-weight: var(--fw-600); }
+.fw-500 { font-weight: var(--fw-500); }
+.fw-400 { font-weight: var(--fw-400); }
+.fw-300 { font-weight: var(--fw-300); }
+
 /* line height */
 .fs-900,
 .fs-800,
 .fs-700,
 .fs-600 {
-    line-height: 1.1;
+    line-height: 1.5;
+}
+
+.fs-500,
+.fs-400,
+.fs-300,
+.fs-200 {
+    line-height: 1.5;
 }
 
 /* ------------------- */
 /* Utility classes     */
 /* ------------------- */ 
-
 .flex {
     display: flex;
-    gap: var(--gap, 1rem);
 }
 
 .grid {
     display: grid;
-    gap: var(--gap, 1rem);
 }
 
-.container {
-    padding-inline: 2em;
-    margin-inline: auto;
-    max-width: 60rem;
+.hidden{
+    display: none;
 }
+
+.box-shadow-sm {box-shadow: var( --box-shadow-1);}
+.box-shadow-md {box-shadow: var( --box-shadow-2);}
+.box-shadow-lg {box-shadow: var( --box-shadow-3);}
+
+.linear-gradient {background: var(--linear-gradient);}
