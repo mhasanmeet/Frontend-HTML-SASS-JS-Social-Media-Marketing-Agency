@@ -159,7 +159,7 @@ main{
 }
 
 .hero{
-    margin: 10rem 0;
+    margin: 10rem 0 5rem;
     height: 70vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -187,9 +187,8 @@ main{
 }
 
 .hero__subscription{
-  margin: 2rem 0;
   border-radius: 1rem;
-  padding: .3rem .5rem;
+  padding: .4rem .5rem;
   display: flex;
   gap: 2rem;
   flex-direction: row;
@@ -203,7 +202,7 @@ main{
   outline: none;
 }
 
-.hero__subscription .hero__email-input:hover {
+.hero__email-input:focus{
   border: 1px dotted var(--color-black-primary);
 }
 
@@ -254,5 +253,62 @@ main{
 
 /* ------------------- */
 /* Feature Section     */
+/* ------------------- */ 
+.features{
+  margin: 5rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: var(--color-background-white);
+}
+
+.features::before{
+  content: "";
+  position: absolute;
+  background: var(--color-black-primary);
+  height: 18rem;
+  width: 99vw;
+  left: 0;
+  z-index: -1;
+}
+
+.feature{
+  padding: 2.3rem 0;
+  z-index: 1;
+  position: relative;
+}
+
+.feature:not(:last-child)::after{
+  content: "";
+  position: absolute;
+  top: 20%;
+  right: 2.5rem;
+  height: 65%;
+  width: 1px;
+  border-right:1px solid var(--color-black-dim);
+}
+
+.feature__wrapper{
+  background: var(--color-green-primary);
+  width: fit-content;
+  display: inline-block;
+  border-radius: 50%;
+  margin: .5rem 0;
+}
+
+.feature__wrapper img{
+  width: 4rem;
+  padding: .5rem;
+}
+
+.feature__solution-title{
+  margin: 1rem 0;
+}
+
+.feature__solution-description{
+  width: 80%;
+}
+
+/* ------------------- */
+/* Service Section     */
 /* ------------------- */ 
 
