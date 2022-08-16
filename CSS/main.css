@@ -445,9 +445,66 @@ main{
   border-radius: 1rem;
 }
 
+/* ------------------- */
+/* Analytic Section    */
+/* ------------------- */
+.analytics{
+  margin: 10rem 0 5rem;
+}
 
+.analytics::before{
+  content: "";
+  background: url(../Images/analytics/analytics-bg.png) center/cover no-repeat;
+  position: absolute;
+  left: 0;
+  height: 90%;
+  width: 100%;
+  z-index: -1;
+}
 
+.analytics__content{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+}
 
+.analytics__left{
+  margin: 16em 0 0;
+}
+
+.analytics__img-sm{
+  position: absolute;
+  left: -6%;
+  top: 50%;
+}
+
+.analytics__img-sm img{
+  width: 10rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 1rem;
+}
+
+.analytics-img img{
+  width: 80%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.analytics__right{
+  margin: auto 0;
+}
+
+.analytics__title{
+  color: var(--color-black-primary);
+  margin-bottom: 4rem;
+}
+
+.analytics__description{
+  color: var(--color-black-primary);
+}
+
+.analytics__btn{
+  color: var(--color-black-primary);
+}
 
 
 
@@ -455,5 +512,5 @@ main{
 
 
 #footer{
-  margin-bottom: 50rem;
+  margin-bottom: 100rem;
 }
