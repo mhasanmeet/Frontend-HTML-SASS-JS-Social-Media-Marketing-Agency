@@ -25,4 +25,13 @@ HTML, CSS, JavaScript
 
 Plus Jakarta Sans
 
+### For SVG I use this two solution
+
+- FIrst, make sag from [blobmaker](https://www.blobmaker.app/)
+- Then, encode it with URL encoder [URL Encoder](https://yoksel.github.io/url-encoder/)
+
+# For box shadow generator
+
+- https://cssgenerator.org/box-shadow-css-generator.html
+
 

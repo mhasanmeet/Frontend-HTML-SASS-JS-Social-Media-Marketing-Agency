@@ -10,9 +10,10 @@
     --color-black-secondary: hsl(0, 0%, 37%);
     --color-black-medium: hsla(0, 0%, 37%, 0.6);
     --color-black-dim: hsl(0, 0%, 73%);
-    --color-pink: hsl(284, 91%, 79%);
+    --color-pink: hsl(286, 30%, 75%);
     --color-purple: hsl(237, 98%, 81%);
     --color-blue-primary: hsl(200, 84%, 58%);
+    --color-blue-primary: #82d0f7;
     --color-blue-secondary: hsl(194, 62%, 76%);
     --color-red: hsl(0, 85%, 55%);
     --color-violet: hsl(285, 86%, 44%);
@@ -123,3 +124,36 @@
 .box-shadow-lg {box-shadow: var( --box-shadow-3);}
 
 .linear-gradient {background: var(--linear-gradient);}
+
+
+/* ----------------------- */
+/* Reuseable Component     */
+/* ----------------------- */ 
+.container {
+    max-width: 80%;
+    padding-inline: 2rem;
+    margin-inline: auto;
+}
+
+.btn-md{
+    /* width: fit-content; */
+    width: 9rem;
+    height: 2.5rem;
+    border: 1px solid var(--color-black-secondary);
+    border-radius: 4rem;
+    font-size: var(--font-size-md);
+}
+
+.btn-sm{
+    height: 2rem;
+    width: 7rem;
+    border: .1px solid var(--color-black-secondary);
+    border-radius: 2rem;
+    font-size: var(--font-size-sm);
+}
+
+.btn-direct{
+  border: none;
+  padding: .5rem 0rem;
+  background: none;
+}
