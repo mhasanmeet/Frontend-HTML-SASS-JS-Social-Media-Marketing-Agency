@@ -449,10 +449,13 @@ main{
 /* Analytic Section    */
 /* ------------------- */
 .analytics{
-  margin: 10rem 0 5rem;
+  margin: 20rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
 }
 
-.analytics::before{
+/* .analytics::before{
   content: "";
   background: url(../Images/analytics/analytics-bg.png) center/cover no-repeat;
   position: absolute;
@@ -460,22 +463,26 @@ main{
   height: 90%;
   width: 100%;
   z-index: -1;
-}
+} */
 
-.analytics__content{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  position: relative;
+.analytics::before{
+  content: "";
+  position: absolute;
+  background: var(--color-green-primary);
+  height: 40rem;
+  width: 99vw;
+  left: 0;
+  z-index: -1;
 }
 
 .analytics__left{
-  margin: 16em 0 0;
+  position: relative;
 }
 
 .analytics__img-sm{
   position: absolute;
-  left: -6%;
-  top: 50%;
+  left: -12%;
+  top: 20%;
 }
 
 .analytics__img-sm img{
@@ -495,16 +502,22 @@ main{
 
 .analytics__title{
   color: var(--color-black-primary);
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .analytics__description{
   color: var(--color-black-primary);
+  margin-bottom: 1rem;
 }
 
 .analytics__btn{
   color: var(--color-black-primary);
-}
+} 
+
+/* ------------------- */
+/* Client Review       */
+/* ------------------- */ 
+
 
 
 
