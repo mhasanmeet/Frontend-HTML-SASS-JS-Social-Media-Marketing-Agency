@@ -517,10 +517,106 @@ main{
 /* ------------------- */
 /* Client Review       */
 /* ------------------- */ 
+.review{
+  position: relative;
+}
 
+.review__header{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
 
+.review__shape{
+  position: absolute;
+  top: -2.5rem;
+  left: 38%;
+}
 
+.review__title{
+  color: var(--color-black-primary);
+}
 
+.review__right{
+  display: flex;
+  gap: 4rem;
+  justify-content: flex-end;
+}
+
+.review__header-arrow{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 1rem 1.3rem;
+  border-radius: 50%;
+}
+
+.review__right .fa-chevron-left{
+  color: var(--color-black-primary);
+}
+
+.review__right .fa-chevron-right{
+  color: var(--color-black-dim);
+}
+
+.review__main{
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.review__main-avatar img{
+  width: 8%;
+}
+
+.review_main-box{
+  border: .5px solid var(--color-black-dim);
+  padding: 2rem;
+  border-radius: .5rem;
+}
+
+.review_main-box:not(:last-child){
+  margin-right: 1.5rem;
+}
+
+.review__wrapper img{
+  width: 15%;
+}
+
+.review__main-content{
+  margin-top: 1.4rem;
+}
+
+.review__main-review{
+  color: var(--color-black-secondary);
+}
+
+.review__main-reviewer{
+  margin-top: .7rem;
+  display: flex;
+  align-items: center;
+}
+
+.review__main-reviewer img{
+  width: 15%;
+  border-radius: 50%;
+  object-fit: cover;
+  background-position: center;
+}
+
+.review__main-intro{
+  margin-left: .8rem;
+}
+
+.review_main-name{
+  color: var(--color-black-primary);
+}
+
+.review__main-designation{
+  color: var(--color-black-medium);
+}
+
+/* ------------------- */
+/* Brands              */
+/* ------------------- */
 
 
 

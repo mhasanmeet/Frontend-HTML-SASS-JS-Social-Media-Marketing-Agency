@@ -30,8 +30,14 @@ Plus Jakarta Sans
 - FIrst, make sag from [blobmaker](https://www.blobmaker.app/)
 - Then, encode it with URL encoder [URL Encoder](https://yoksel.github.io/url-encoder/)
 
+- Tried SVG background wavy shape many ways, I didn't find exactly like that shape. Others Shape tried but couldn't hack the css process 😟
+
 # For box shadow generator
 
 - https://cssgenerator.org/box-shadow-css-generator.html
+
+# For person avatar
+
+- I use [AI generated Photos](https://generated.photos/)
 
 
