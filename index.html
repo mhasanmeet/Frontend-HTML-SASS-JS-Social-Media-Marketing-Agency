@@ -8,16 +8,19 @@
     <meta name="author" content="Mahmudul Hasan">
     <meta name="publisher" content="CodegNet">
     <meta name="copyright" content="Mahmudul Hasan">
-    <meta name="description" content="Mercado is a social Media Marketing Agency. We work on SME business farm">
+    <meta name="description" property="og:description" content="Mercado is a social Media Marketing Agency. We work on SME business farm">
     <meta name="page-type" content="Business, Marketing Agency">
     <meta name="audience" content="Business Owner, SME Entrepreneur">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#DDF472">
+    <meta property="og:image" content="./Images/social-media-preview-image.png">
+    <meta property="og:image:alt" content="Mercado Social Media Marketing Agency">
+    <meta property="twitter:card" content="">
     <link rel="shortcut icon" sizes="32x32" type="image" href="./favicon.ico"/>
     <script src="https://kit.fontawesome.com/36d9f3a369.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./CSS/main.css">
     <link rel="stylesheet" href="./CSS/media-query.css">
-    <title>Mercado | Social Media Marketing Agency</title>
+    <title property="og:title">Mercado | Social Media Marketing Agency</title>
 </head>
 <body>
     
@@ -391,10 +394,100 @@
             
         </section>
 
-        <section class="brands"></section>
-        <section class="direct-contact"></section>
+        <section class="brands">
+            <h3 class="brands__title fs-600 fw-500">Trusted By Renowned Company</h3>
+
+            <div class="brands__images">
+                <img src="./Images/brands/airbnb.png" alt="airbnb">
+                <img src="./Images/brands/indeed.png" alt="indeed">
+                <img src="./Images/brands/sony.png" alt="sony">
+                <img src="./Images/brands/honeyweel.png" alt="honeyweel">
+                <img src="./Images/brands/veeling.png" alt="vueling">
+                <img src="./Images/brands/slack.png" alt="slack">
+                <img src="./Images/brands/acorsa.png" alt="acorsa">
+            </div>
+        </section>
+
+        <section class="contacts">
+            <h3 class="contacts__title fs-700 fw-600">
+                Want To Increase <br>
+                Your Product sell?
+            </h3>
+
+            <button class="contacts__btn btn-md">Contact Now</button>
+        </section>
     </main>
 
-    <footer class="container footer" id="footer"></footer>
+    <footer class="container footer ff-jakarta" id="footer">
+        <div class="footer__main">
+            <div class="footer__signup">
+                <p class="fs-400 fw-300">There are many variations of passages of Lorem the Ipsum available it  majority.</p>
+                
+                <form class="footer__signup-form" action="">
+                    <input type="email" class="footer__email-input" placeholder="name@mail.com" required>
+                    <button type="submit" class="footer__submit-btn btn-sm fs-200 fw-300">Enter Your Email</button>
+                </form>
+            </div>
+
+            <div class="footer__links">
+                <div class="footer__links-column">
+                    <p class="fs-300 fw-300">Company</p>
+
+                    <div class="footer__links-list">
+                        <a href="#">About</a>
+                        <a href="#">Features</a>
+                        <a href="#">Works</a>
+                        <a href="#" class="footer__link-career">We're Hiring!</a>
+                    </div>
+
+                </div>
+
+                <div class="footer__links-column">
+                    <p class="fs-300 fw-300">Help</p>
+
+                    <div class="footer__links-list">
+                        <a href="#">Customer Support</a>
+                        <a href="#">Delivery Details</a>
+                        <a href="#">Terms & Conditions</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+
+                <div class="footer__links-column">
+                    <p class="fs-300 fw-300">Resources</p>
+
+                    <div class="footer__links-list">
+                        <a href="#">Free eBooks</a>
+                        <a href="#">Development Tutorial</a>
+                        <a href="#">How to - Blog</a>
+                        <a href="#">Youtube Playlist</a>
+                    </div>
+                </div>
+                
+                <div class="footer__links-column">
+                    <p class="fs-300 fw-300">Extra Links</p>
+
+                    <div class="footer__links-list">
+                        <a href="#">Customer Support</a>
+                        <a href="#">Delivery Details</a>
+                        <a href="#">Terms & Conditions</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="footer__bottom-copyright">
+                <p>&copy; Copyright 2021, All Rights Reserved</p>
+            </div>
+
+            <div class="footer__bottom-social-media">
+                <a href="#"><img src="./Images/footer-social-media/FacebookLogo.png" alt="facebook"></a>
+                <a href="#"><img src="./Images/footer-social-media/InstagramLogo.png" alt="Instagram"></a>
+                <a href="#"><img src="./Images/footer-social-media/YoutubeLogo.png" alt="Youtube"></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -142,6 +142,7 @@
     border: 1px solid var(--color-black-secondary);
     border-radius: 4rem;
     font-size: var(--font-size-md);
+    cursor: pointer;
 }
 
 .btn-sm{
@@ -150,12 +151,14 @@
     border: .1px solid var(--color-black-secondary);
     border-radius: 2rem;
     font-size: var(--font-size-sm);
+    cursor: pointer;
 }
 
 .btn-direct{
   border: none;
   padding: .5rem 0rem;
   background: none;
+  cursor: pointer;
 }
 
 /* ----------------------- */
