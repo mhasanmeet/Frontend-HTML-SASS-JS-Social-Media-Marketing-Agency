@@ -1,6 +1,3 @@
-
-> Work on progress.....
-
 ## Mercado Social Media Marketing Agency
 
 ### Tech Use
@@ -32,12 +29,20 @@ Plus Jakarta Sans
 
 - Tried SVG background wavy shape many ways, I didn't find exactly like that shape. Others Shape tried but couldn't hack the css process 😟
 
-# For box shadow generator
+## For box shadow generator
 
 - https://cssgenerator.org/box-shadow-css-generator.html
 
-# For person avatar
+## For person avatar
 
 - I use [AI generated Photos](https://generated.photos/)
+
+## Images
+
+<kbd>
+    <img src="./project-images.png">    
+<kbd/>
+
+### Web UI Design Credit: **Tanvir Ahmed**
 
 
