@@ -1,24 +1,74 @@
+/*===== Extra Large Screen =====*/
+@media screen and (max-width: 1920px) { }
 
-/*===== Extra Small Feature Phone Screen =====*/
-@media screen and (max-width: 320px) { }
+/*===== Medium Large Screen =====*/
+@media screen and (max-width: 1200px) {
+    .navbar{
+        height: 4.5rem;
+        width: 90%;
+    }
 
-/*===== Mobile Devices Screen =====*/
-@media screen and (max-width: 480px) { }
+    .nav__btn-group{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    .nav__btn-signup{
+        width: 8rem;
+        height: 2.2rem;
+        background: var(--color-green-primary);
+        font-size: var(--font-size-sm);
+    }
 
-/*===== Tablet Screen =====*/
-@media screen and (max-width: 600px) { }
+    .nav__btn-login{
+        width: 8rem;
+        height: 2.2rem;
+        font-size: var(--font-size-sm);
+    }
 
-/*===== Notebook Size Standard Screen =====*/
-@media screen and (max-width: 768px) { }
+    * ------------------- */
+    /* Hero Section        */
+    /* ------------------- */ 
+    main{
+        margin-top: 4rem;
+    }
 
-/*===== Notebook Size Large Screen =====*/
-@media screen and (max-width: 900px) { }
+    .hero{
+        margin: 8rem 0 5rem;
+    }
+
+    .hero__title{
+        margin-bottom: 2.5rem;
+    }
+}
 
 /*===== Large Screen =====*/
 @media screen and (max-width: 1024px) { }
 
-/*===== Medium Large Screen =====*/
-@media screen and (max-width: 1200px) { }
+/*===== Notebook Size Large Screen =====*/
+@media screen and (max-width: 900px) { }
 
-/*===== Extra Large Screen =====*/
-@media screen and (max-width: 1920px) { }
+/*===== Notebook Size Standard Screen =====*/
+@media screen and (max-width: 768px) { }
+
+/*===== Tablet Screen =====*/
+@media screen and (max-width: 600px) { }
+
+/*===== Mobile Devices Screen =====*/
+@media screen and (max-width: 480px) { }
+
+/*===== Extra Small Feature Phone Screen =====*/
+@media screen and (max-width: 320px) { }
+
+
+
+
+
+
+
+
+
+
+

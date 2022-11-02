@@ -123,7 +123,22 @@ header{
 }
 
 .nav__btn-signup{
-    background: var(--color-green-primary);
+  width: 9rem;
+  height: 2.5rem;
+  border: 1px solid var(--color-black-secondary);
+  border-radius: 4rem;
+  font-size: var(--font-size-md);
+  cursor: pointer;
+  background: var(--color-green-primary);
+}
+
+.nav__btn-login{
+  width: 9rem;
+  height: 2.5rem;
+  border: 1px solid var(--color-black-secondary);
+  border-radius: 4rem;
+  font-size: var(--font-size-md);
+  cursor: pointer;
 }
 
 /* ------------------- */
@@ -468,15 +483,16 @@ main{
 .analytics::before{
   content: "";
   position: absolute;
-  background: var(--color-green-primary);
-  height: 40rem;
-  width: 99vw;
+  height: 90vh; 
+  width: 100%;
   left: 0;
+  background: radial-gradient(110% 30% at top, transparent 50%, var(--color-green-primary) 51%);
   z-index: -1;
 }
 
 .analytics__left{
   position: relative;
+  margin-top: 10rem;
 }
 
 .analytics__img-sm{
@@ -497,7 +513,7 @@ main{
 }
 
 .analytics__right{
-  margin: auto 0;
+  margin-top: 10rem;
 }
 
 .analytics__title{
