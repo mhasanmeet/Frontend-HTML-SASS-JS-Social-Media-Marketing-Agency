@@ -45,4 +45,6 @@ Plus Jakarta Sans
 
 ### Web UI Design Credit: **Tanvir Ahmed**
 
+$ sass --watch assets/sass/main.scss:assets/css/main.css
+
 

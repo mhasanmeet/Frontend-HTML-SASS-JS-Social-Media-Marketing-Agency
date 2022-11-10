@@ -1,0 +1,131 @@
+@use '../mediaqueries' as media;
+
+//Header
+.header{
+    width: 100%;
+    backdrop-filter: blur(2rem);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: .5s; // For animation dark mode
+}
+
+//Nav
+.nav{
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo{
+        img{
+            width: 10rem;
+
+            @include media.breakpoints-down(small){
+                width: 8rem;
+            }
+        }
+    }
+
+    &__menu{
+        @include media.breakpoints-down(medium){
+            position: fixed;
+            background-color: var(--color-background-white);
+            box-shadow: var(--box-shadow-1);
+            padding: 2.5rem 0 0;
+            width: 80%;
+            top: -18rem;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            transition: .4s;
+            border-radius: .5rem;
+        }
+
+        @include media.breakpoints-up(large){
+            top: 0; 
+            padding: 0;
+            display: flex;
+            gap: 2rem;
+        }
+    }
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1.5rem;
+
+        @include media.breakpoints-up(large){
+            flex-direction: row;
+            column-gap: 1.6rem;
+        }
+    }
+
+    &__link,
+    &__toggle{
+        color: var(--color-text-primary);
+        font-weight: var(--fw-500);
+    }
+
+    &__btn-group{
+        @include media.breakpoints-down(medium){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        button{
+            border: none;
+            border-radius: 5rem;
+            
+            a{
+                color: var(--color-text-primary);
+                font-weight: var(--fw-500);   
+            }
+    
+            @include media.breakpoints-down(medium){
+                font-size: var(--font-size-md);
+                padding: .6rem .8rem;
+                border-radius: 0;
+            }
+
+            @include media.breakpoints-up(large){
+                font-size: var(--font-size-md);
+                padding: .4rem 1.2rem;
+            }
+        }
+
+        .btn__signup{
+            background-color: var(--color-green-secondary);
+            border: 1px solid var(--color-black-dim);
+        }
+
+        .btn__login{
+            margin-left: .5rem;
+            background-color: var(--color-background-white);
+            border: 1px solid var(--color-black-dim);
+        }
+    }
+
+    &__toggle{
+        font-size: 1.3rem;
+        cursor: pointer;
+
+        @include media.breakpoints-up(large){
+            display: none;
+        }
+    }
+}
+
+/* Show menu */
+.show-menu{
+    top: 4rem;
+}
+
+/* Change background header */
+.scroll-header{
+    box-shadow: var(--box-shadow-1);
+}
