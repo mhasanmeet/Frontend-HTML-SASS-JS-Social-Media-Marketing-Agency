@@ -45,6 +45,14 @@ Plus Jakarta Sans
 
 ### Web UI Design Credit: **Tanvir Ahmed**
 
-$ sass --watch assets/sass/main.scss:assets/css/main.css
+`$ sass --watch assets/sass/main.scss:assets/css/main.css`
 
+### breakpoints
 
+`
+    0 - 360 px / 0 - 22.56 em = small
+    361 - 576 px / 22.56 - 36 em = medium
+    577 - 767 px / 36.06 - 47.93 = large
+    768 - 968 px / 48 - 60.5 = xLarge
+    1024 px / 64 = xxLarge
+`

@@ -1,0 +1,17 @@
+@use '../mediaqueries' as media;
+
+.service{
+
+    .container{
+
+    }
+
+
+        
+    @include media.breakpoints-down(medium){
+
+    }
+
+    @include media.breakpoints-up(large){
+    }
+}
