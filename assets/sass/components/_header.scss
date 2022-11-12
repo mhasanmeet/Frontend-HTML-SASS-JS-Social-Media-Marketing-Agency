@@ -63,6 +63,10 @@
         }
     }
 
+    .active-link{
+        color: var(--color-green-third);
+    }
+
     &__link,
     &__toggle{
         color: var(--color-text-primary);

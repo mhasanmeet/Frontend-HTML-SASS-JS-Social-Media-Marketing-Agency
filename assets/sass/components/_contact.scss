@@ -43,6 +43,7 @@
             border: none;
             background-color: var(--color-background-white);
             color: var(--color-text-secondary);
+            cursor: pointer;
 
             @include media.breakpoints-down(medium){
                 border-radius: 8rem;

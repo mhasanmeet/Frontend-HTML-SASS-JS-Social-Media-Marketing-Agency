@@ -17,16 +17,6 @@ HTML, CSS, JavaScript
 
 - I use [AI generated Photos](https://generated.photos/)
 
-## Images
-
-<kbd>
-    <img src="./project-images.png">    
-<kbd/>
-
-### Web UI Design Credit: **Tanvir Ahmed**
-
-`$ sass --watch assets/sass/main.scss:assets/css/main.css`
-
 ### breakpoints
 
 Convert breakpoints into em size. Base Size 16px.
@@ -38,3 +28,11 @@ Convert breakpoints into em size. Base Size 16px.
     768 - 968 px / 48 - 60.5 = xLarge
     1024 px / 64 = xxLarge
 `
+
+## Images
+
+<kbd>
+    <img src="./project-images.png">    
+<kbd/>
+
+### Web UI Design Credit: **Tanvir Ahmed**

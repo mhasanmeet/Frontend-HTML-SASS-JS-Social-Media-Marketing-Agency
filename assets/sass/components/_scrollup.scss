@@ -1,0 +1,28 @@
+@use '../mediaqueries' as media;
+
+.scrollUp{
+    bottom: -30%;
+
+    .fa-arrow-up{
+        position: fixed;
+        color: var(--color-text-secondary);
+        padding: .8rem 1rem;
+        border-radius: .2rem;
+        background-color: var(--color-black-dim);
+        box-shadow: var(--box-shadow-1);
+        transition: .4s ease-in-out;
+    
+        @include media.breakpoints-up(large){
+            right: 20rem;
+        }
+    }
+
+    .show-scroll{
+        @include media.breakpoints-up(large){
+            bottom: 10rem;
+            transition: .4s ease-in-out;
+        } 
+    }
+}
+
+
