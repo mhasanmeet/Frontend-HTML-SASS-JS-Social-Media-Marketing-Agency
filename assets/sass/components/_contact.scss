@@ -1,0 +1,64 @@
+@use '../mediaqueries' as media;
+
+.contact{
+    position: relative;
+    z-index: 1;
+
+    .container{
+        @include media.breakpoints-down(medium){
+            margin-bottom: -3rem;
+        }
+    
+        @include media.breakpoints-up(large){
+            margin-bottom: -5rem;
+        }
+    }
+
+    &__content{
+        background-color: var(--color-green-primary);
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        align-items: center;
+
+        @include media.breakpoints-down(medium){
+            width: 80%;
+            border-radius: .5rem;
+            padding: 1rem .5rem;
+        }
+
+        h3{
+            @include media.breakpoints-down(medium){
+                font-size: var(--font-size-lg);
+            }
+        
+            @include media.breakpoints-up(large){
+                font-size: var(--font-size-2xl);
+                color: var(--color-text-secondary);
+            }
+        }
+
+        button{
+            font-size: var(--font-size-md);
+            border: none;
+            background-color: var(--color-background-white);
+            color: var(--color-text-secondary);
+
+            @include media.breakpoints-down(medium){
+                border-radius: 8rem;
+                padding: .8rem 1rem;
+            }
+        
+            @include media.breakpoints-up(large){
+                border-radius: 8rem;
+                padding: 1rem 1.2rem;
+            }
+        }
+
+        @include media.breakpoints-up(large){
+            width: 80%;
+            border-radius: .5rem;
+            padding: 3rem 1rem;
+        }
+    }
+}
