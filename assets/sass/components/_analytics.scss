@@ -1,0 +1,113 @@
+@use '../mediaqueries' as media;
+
+.analytics{
+    position: relative;
+
+    &::before{
+        content: "";
+        position: absolute;
+        height: 100%; 
+        width: 100%;
+        left: 0;
+        z-index: -1;
+
+        @include media.breakpoints-down(medium){
+            background: radial-gradient(150% 30% at top, transparent 50%, var(--color-green-primary) 51%);
+        }
+    
+        @include media.breakpoints-up(large){
+            background: radial-gradient(130% 30% at top, transparent 50%, var(--color-green-primary) 51%);
+        }
+    }
+
+    .container{
+        @include media.breakpoints-down(medium){
+            padding: 3rem 0;
+        }
+
+        @include media.breakpoints-up(large){
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 8rem 0;
+        }
+    }
+
+    &__left{
+        flex: 1;
+
+        .img-sm{
+            width: 5rem;
+            border-radius: .6rem;
+            box-shadow: var(--box-shadow-1);
+
+            @include media.breakpoints-down(medium){
+                position: absolute;
+                margin-top: 15rem;
+                left: 0rem;
+            }
+
+            @include media.breakpoints-up(large){
+                position: absolute;
+                margin-top: 17rem;
+                left: 24rem;
+            }
+        }
+
+        .img{
+            border-radius: .6rem;
+            box-shadow: var(--box-shadow-1);
+
+            @include media.breakpoints-down(medium){
+                margin-top: 10rem;
+            }
+
+            @include media.breakpoints-up(large){
+                margin-top: 5rem;
+            }
+        }
+    }
+
+    &__right{
+        flex: 1;
+
+        button{
+            margin-top: 1rem;
+            font-size: var(--font-size-md);
+            border: none;
+            background-color: transparent;
+            color: var(--color-text-secondary);
+            padding: .8rem 0;
+            transition: .3s ease-in-out;
+            cursor: pointer;
+        }
+
+        @include media.breakpoints-down(medium){
+            text-align: center;
+            margin-top: 2rem;
+
+            h2{
+                font-size: var(--font-size-2xl);
+            }
+
+            p{
+                margin-top: 1rem;
+                line-height: 1.5;
+            }
+            
+        }
+
+        @include media.breakpoints-up(large){
+            margin-top: 10rem;
+
+            h2{
+                font-size: var(--font-size-4xl);
+            }
+
+            p{
+                margin-top: 1rem;
+                line-height: 1.6;
+            }
+        }
+    }
+}
